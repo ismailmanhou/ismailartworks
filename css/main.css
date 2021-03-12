@@ -36,7 +36,7 @@
   text-align: center;
   background-color: #57aad2;
   color: #fff;
-  margin: 40px auto;
+  margin: 20px auto;
   width: 400px;
   border-radius: 10px;
   padding: 10px 15px;
@@ -53,8 +53,8 @@
 }
 @media (max-width: 767px) {
   .head-with-border h2 {
-    width: 500px;
-    font-size: 50px;
+    width: 300px;
+    font-size: 20px;
   }
 }
 
@@ -199,11 +199,21 @@ ul, ol {
 .landing-page .overlay .header-area .logo span {
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  .landing-page .overlay .header-area .logo {
+    font-size: 30px;
+  }
+}
 .landing-page .overlay .header-area .links {
   width: 100%;
   text-align: right;
   padding-left: 0;
   padding-right: 20px;
+}
+@media (max-width: 767px) {
+  .landing-page .overlay .header-area .links {
+    display: none;
+  }
 }
 .landing-page .overlay .header-area .links li {
   display: inline-block;
@@ -226,18 +236,38 @@ ul, ol {
   color: #fff;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .landing-page .overlay .introduction-text {
+    font-size: 18px;
+  }
+}
 .landing-page .overlay .introduction-text h1 {
   font-size: 34px;
   margin: 0 0 12px;
+}
+@media (max-width: 767px) {
+  .landing-page .overlay .introduction-text h1 {
+    font-size: 18px;
+  }
 }
 .landing-page .overlay .introduction-text span {
   color: #ae4966;
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  .landing-page .overlay .introduction-text span {
+    font-size: 20px;
+  }
+}
 .landing-page .overlay .introduction-text p {
   line-height: 1.6;
   font-size: 20px;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .landing-page .overlay .introduction-text p {
+    font-size: 12px;
+  }
 }
 
 /*start bullets*/
@@ -370,7 +400,16 @@ ul, ol {
 .about-us {
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flex;
+}
+@media (min-width: 992px) {
+  .about-us {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .about-us {
+    text-align: center;
+  }
 }
 .about-us .image-box {
   flex: 1;
@@ -531,118 +570,157 @@ ul, ol {
   border-radius: 50%;
 }
 
-.storyboard {
-  width: 100%;
-  padding: 3px;
-}
-.storyboard .master-img img {
-  max-width: 42%;
-}
-.storyboard .thumbnails {
-  overflow: hidden;
-}
-.storyboard .thumbnails img {
-  max-width: 50%;
-  float: left;
-  border: 2px solid #d1d1d1;
-  margin-bottom: 1%;
-}
-.storyboard .thumbnails img:not(:last-child) {
-  margin-right: 1%;
-}
-
 .products {
   width: 100%;
+  background-color: #eee;
   overflow: hidden;
-  background-color: #EEE;
 }
 .products .product {
+  position: relative;
   float: left;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 25px;
-}
-.products .product:not(:last-of-type) {
   margin-right: 10px;
 }
 @media (min-width : 768px) {
   .products .product {
-    width: calc(97% / 2);
+    width: 48.5%;
   }
 }
 @media (min-width: 992px) {
   .products .product {
-    width: calc(97% / 4);
+    width: 23.75%;
   }
 }
 @media (max-width: 767px) {
   .products .product {
-    text-align: center;
     width: 100%;
     float: none;
     margin-bottom: 50px;
   }
 }
-.products .product h1 {
-  background-color: #57aad2;
-  color: #fff;
-  margin: 0;
-  width: 100%;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 20px;
-}
-@media (max-width: 767px) {
-  .products .product h1 {
-    font-size: 60px;
-    text-align: left;
-  }
-}
-.products .product h3 {
-  font-size: 30px;
-  color: #5e5e5e;
-  margin: 10px 0;
-}
-.products .product span {
-  display: block;
-  color: #5e5e5e;
-  font-weight: bold;
-  padding-bottom: 5px;
-}
 .products .product img {
   max-width: 100%;
-  max-height: 50%;
 }
-.products .product i {
-  display: block;
-  padding: 10px;
-  margin: 10px 0;
+.products .product .heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+}
+.products .product .heart i {
+  background-color: rgba(230, 53, 53, 0.6);
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+.products .product .heart i:hover {
+  background-color: #e63535;
+}
+.products .product:hover .over {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(87, 170, 210, 0.6);
+}
+.products .product .text-box {
+  position: relative;
+}
+.products .product .text-box .brand,
+.products .product .text-box .desc {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 5px;
+  background-color: #fff;
+  font-weight: bold;
+}
+.products .product .text-box .brand div,
+.products .product .text-box .desc div {
+  float: left;
+  width: 50%;
+}
+.products .product .text-box .brand .price,
+.products .product .text-box .desc .price {
+  float: left;
+  width: 50%;
+  font-weight: normal;
+  text-align: right;
+  text-decoration: line-through;
+}
+.products .product .text-box .brand .nprice,
+.products .product .text-box .desc .nprice {
+  float: left;
+  width: 50%;
+  text-align: right;
+  color: #e63535;
+}
+.products .product .text-box .desc {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.products .product .text-box .promo {
+  position: absolute;
+  top: -30px;
+  left: 5px;
+  display: flex;
+  font-size: 12px;
+}
+.products .product .text-box .promo div {
+  margin-left: 5px;
+}
+.products .product .text-box .promo div:nth-child(1) {
+  flex: 2;
+  background-color: black;
+  color: #fff;
+  padding: 4px;
+}
+.products .product .text-box .promo div:nth-child(2) {
+  flex: 1;
   background-color: #57aad2;
   color: #fff;
-  cursor: pointer;
+  padding: 4px;
 }
-@media (max-width: 767px) {
-  .products .product i {
-    text-align: left;
-    font-size: 50px;
-    padding: 15px;
-  }
-}
-.products .product .description {
-  padding: 10px;
-  display: none;
+.products .product .text-box .size {
+  font-size: 14px;
+  font-weight: bold;
   color: #5e5e5e;
+  padding: 10px 10px 0 10px;
+  word-spacing: 6px;
+  background-color: #fff;
 }
-@media (max-width: 767px) {
-  .products .product .description {
-    text-align: left;
-    font-size: 50px;
-    padding: 15px;
+.products .product .text-box .size .color {
+  display: flex;
+}
+.products .product .text-box .size .color img {
+  width: 50px;
+  margin-right: 4px;
+}
+.products .hide-size {
+  opacity: 0;
+}
+.products .footup {
+  transition: 0.5s ease-in-out;
+}
+@media (min-width : 768px) {
+  .products .footup {
+    transform: translateY(-20%);
   }
 }
-.products .product:first-child {
-  margin-right: 1px;
+@media (min-width: 992px) {
+  .products .footup {
+    transform: translateY(-10%);
+  }
+}
+@media (max-width: 767px) {
+  .products .footup {
+    transform: translateY(0%);
+  }
+}
+.products .active {
+  border: 1px solid;
 }
 
 .timeline {

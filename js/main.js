@@ -1,5 +1,7 @@
 /**Create Popup With The Image */
 
+
+
 let ourGallery = document.querySelectorAll(".gallery img");
 
 ourGallery.forEach(img => {
@@ -132,3 +134,72 @@ window.onscroll = function () {
   }
 
 };
+
+
+//Product 
+
+var size1=document.querySelector('#size1');
+//hidden the aize section 
+size1.classList.add('hide-size');
+// prodcut card
+var product1 = document.querySelector('#product1');
+//main image
+
+var img1 = document.querySelector('#img1');
+//card footer
+var footer1 = document.querySelector('#footer1');
+
+var colImg1 = document.querySelector('#color1');
+var colImg2 = document.querySelector('#color2');
+var colImg3 = document.querySelector('#color3');
+
+
+var col1 = document.querySelector('#col1');
+var col2 = document.querySelector('#col2');
+var col3 = document.querySelector('#col3');
+
+colImg1.classList.add('active');
+
+product1.addEventListener('mouseover' ,function(){
+  img1.src = 'imgs/t-shirt/back.jpg';
+  size1.classList.remove('hide-size');
+  footer1.classList.add('footup');
+
+});
+product1.addEventListener('mouseout' ,function(){
+
+  img1.src = 'imgs/t-shirt/1.jpg';
+  size1.classList.add('hide-size');
+  footer1.classList.remove('footup');
+  
+});
+col1.addEventListener('mouseover' ,function(){
+
+  colImg1.classList.add('active');
+  colImg1.classList.remove('active');
+  event.stopImmediatePropagation();
+  size1.classList.remove('hide-size');
+  footer1.classList.add('footup');
+  img1.src = 'imgs/t-shirt/1-1.jpg';
+  
+});
+col2.addEventListener('mouseover' ,function(){
+
+  colImg2.classList.add('active');
+  colImg2.classList.remove('active');
+  event.stopImmediatePropagation();
+  size1.classList.remove('hide-size');
+  footer1.classList.add('footup');
+  img1.src = 'imgs/t-shirt/1-2.jpg';
+  
+});
+col3.addEventListener('mouseover' ,function(){
+
+  colImg3.classList.add('active');
+  colImg3.classList.remove('active');
+  event.stopImmediatePropagation();
+  size1.classList.remove('hide-size');
+  footer1.classList.add('footup');
+  img1.src = 'imgs/t-shirt/1-3.jpg';
+  
+});
