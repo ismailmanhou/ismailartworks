@@ -550,7 +550,7 @@ ul, ol {
 }
 @media (max-width: 767px) {
   .popup-box img {
-    max-width: 800px;
+    max-width: 500px;
   }
 }
 .popup-box .close-button {
