@@ -23,17 +23,23 @@
     <!-- Start navBullets -->
 
     <div class="nav-bullets">
-        <div class="bullet">
-            <div class="tooltip" data-section=".about-us">About Us</div>
+        <div class="bullet" data-section=".about-us">
+            <div class="tooltip"  >About Us</div>
         </div>
-        <div class="bullet">
-            <div class="tooltip" data-section=".skills">Our Skills</div>
+        <div class="bullet" data-section=".skills">
+            <div class="tooltip" >Our Skills</div>
         </div>
-        <div class="bullet">
-            <div class="tooltip" data-section=".gallery">Our Gallery</div>
+        <div class="bullet" data-section=".portfolio">
+            <div class="tooltip" >Portfolio</div>
         </div>
-        <div class="bullet">
-            <div class="tooltip" data-section=".timeline">Timeline</div>
+        <div class="bullet" data-section=".t-shirt">
+            <div class="tooltip" >T-Shirt</div>
+        </div>
+        <div class="bullet" data-section=".time">
+            <div class="tooltip" >Timeline</div>
+        </div>
+        <div class="bullet" data-section=".contact-us">
+            <div class="tooltip" >Contact Us</div>
         </div>
     </div>
     <!-- End navBullets -->
@@ -41,29 +47,41 @@
     <div class="landing-page">
         <div class="overlay">
             <div class="container">
-                <div class="header-area">
-                    <div class="logo"><span>IsmailArtWorks</span></div>
-                    <ul class="links">
-                        <li><a href="#" data-scroll="home">Home</a> </li>
-                        <li><a href="#" data-scroll="gallery">Gallery</a></li>
-                        <li><a href="#" data-scroll="works">Works</a></li>
-                        <li><a href="#" data-scroll="product">T-Shirt</a></li>
-                        <li><a href="#" data-scroll="timeline">Timeline</a></li>
-                        <li><a href="#" data-scroll="contact-us">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="introduction-text">
-                    <h1>We Are <span>Cerative</span> Agency</h1>
-                    <p>Specialist in video creation, animation videos and video editing for all social platforms. +5
-                        years of experience a video Editor,Motion Graphic Designer and Animation 2D Expert in Toon Boom
-                        Animation,Adobe Animate,Adobe After Effects,Premiere Pro,Illustra</p>
-                </div>
+            <div class="header-area">
+               
+                    <div class="logo">
+                        <img src="imgs/logo.png" alt="">
+                       
+                    </div>
+                <div class="links-containe">
+                <ul class="links">
+                    <li><a href="#" data-scroll="home">Home</a> </li>
+                    <li><a href="#" data-scroll="about-us">About Us</a></li>
+                    <li><a href="#" data-scroll="skills">Our Skills</a></li>
+                    <li><a href="#" data-scroll="portfolio">Portfolio</a></li>
+                    <li><a href="#" data-scroll="t-shirt">T-Shirt</a></li>
+                    <li><a href="#" data-scroll="time">Timeline</a></li>
+                    <li><a href="#" data-scroll="contact-us">Contact Us</a></li>
+                </ul>
+                <button class="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
+        <div class="introduction-text">
+            <h2>HAY! THERE, I AM <span>ISMAIL MANHOU</span></h2>
+            <p>A Freelance Motion Graphic </p>
+            <button>Download My CV </button>
+        </div>
+        </div>
     </div>
+    </div>
+   
     <!-- End Header -->
     <!-- Start About-Us -->
-    <div class="head-with-border">
+    <div class="head-with-border about-us">
         <h2>About Us</h2>
     </div>
     <div class="container">
@@ -83,7 +101,7 @@
     </div>
     <!-- End About-Us -->
     <!-- Start Our-Skills -->
-    <div class="head-with-border">
+    <div class="head-with-border skills">
         <h2>Our Skills</h2>
     </div>
     <div class="skills">
@@ -92,11 +110,17 @@
             <div class="skill-box">
                 <div class="skill-name">Photoshop</div>
                 <div class="skill-progress">
-                    <span data-progress="80%"></span>
+                    <span data-progress="90%"></span>
                 </div>
             </div>
             <div class="skill-box">
                 <div class="skill-name">AfterEffect</div>
+                <div class="skill-progress">
+                    <span data-progress="95%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Illustrator</div>
                 <div class="skill-progress">
                     <span data-progress="90%"></span>
                 </div>
@@ -104,13 +128,13 @@
             <div class="skill-box">
                 <div class="skill-name">Css</div>
                 <div class="skill-progress">
-                    <span data-progress="70%"></span>
+                    <span data-progress="80%"></span>
                 </div>
             </div>
             <div class="skill-box">
                 <div class="skill-name">Html</div>
                 <div class="skill-progress">
-                    <span data-progress="70%"></span>
+                    <span data-progress="80%"></span>
                 </div>
             </div>
             <div class="skill-box">
@@ -123,11 +147,25 @@
     </div>
     <!-- End Our-Skills -->
     <!-- Start Gallery -->
-    <div class="head-with-border">
-        <h2>Our Gallery</h2>
-    </div>
-    <div class="container">
-        <div id="gallery" class="gallery ">
+ 
+
+    <!-- End Gallery -->
+        <!-- Start Dynamick Tabs -->
+        <div  class="head-with-border portfolio">
+            <h2>Portfolio</h2>
+        </div>
+<div class="container">
+    <button class="switch-tabs">Switch</button>
+    <div class="dynamic-tabs">
+        <ul class="tabs-list ">
+            <li class="active" data-content=".content-one">Our Mangay</li>
+            <li data-content=".content-tow">Our Drawings </li>
+            <li data-content=".content-three"> Our Gallery</li>
+            <li data-content=".content-four">Our Storybord</li>
+        </ul>
+        <div class="content-list">
+            <div class="content-one">
+                <div id="gallery" class="gallery ">
 
 
             <div class="images-box">
@@ -161,25 +199,77 @@
             </div> -->
 
         </div>
-    </div>
+            </div>
+            <div class="content-tow">
+                <div id="gallery" class="gallery ">
 
-    <!-- End Gallery -->
+
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/1.png" >
+        
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/2.png" >
+        
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/3.png" >
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/4.png" >
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/5.png" >
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/6.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/7.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/8.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/9.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/10.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/11.png" >
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- <div class="toggle_btn">
+                        <div class="toggle_btn from-left upper text-centre ">
+                            <span class="toggle_text">show more </i></span>
+                        </div>
+                    </div> -->
+        
+                </div>
+            </div>
+            <div class="content-three">three</div>
+            <div class="content-four">four</div>
+        </div>
+    </div>
+</div>
+        <!-- End Dynamick Tabs -->
     <!-- Start product -->
 
-    <div class="head-with-border">
+    <div  class="t-shirt head-with-border ">
         <h2>T-Shirt</h2>
     </div>
-    <div id="products" class="products">
+    <div  class="products">
         <div class="container">
-            <div class="product" id="product1">
+            <div class="product" >
                 <div class="heart">
                     <i class="fa fa-heart-o " aria-hidden="true"></i>
                 </div>
                 <div class="img-box">
-                    <img id="img1" src="imgs/t-shirt/1.jpg" alt="">
+                    <img id="img1" src="imgs/t-shirt/1-1.jpg" alt="">
                 </div>
 
-                <div class="text-box" id="footer1">
+                <div class="text-box">
                     <div class="brand">
                         <div>T.Shirt</div>
                         <div class="price"> 100 MAD </div>
@@ -192,34 +282,44 @@
                         <div>T-Shirt Art Works - d'été </div>
                         <div class="nprice"> 80 MAD </div>
                     </div>
-                    <div id="size1" class="size">
-                        <div class="color">
-                            <div id="col1">
-                                <img id="color1" src="imgs/t-shirt/1-1.jpg" alt="">
-                            </div>
-                            <div id="col2">
-                                <img id="color2" src="imgs/t-shirt/1-2.jpg" alt="">
-                            </div>
-                            <div id="col3">
-                                <img id="color3" src="imgs/t-shirt/1-3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div>XS S M XL </div>
-                    </div>
-                    
                 </div>
             </div>
+            <div class="product" >
+                <div class="heart">
+                    <i class="fa fa-heart-o " aria-hidden="true"></i>
+                </div>
+                <div class="img-box">
+                    <img id="img1" src="imgs/t-shirt/1-2.jpg" alt="">
+                </div>
+
+                <div class="text-box">
+                    <div class="brand">
+                        <div>T.Shirt</div>
+                        <div class="price"> 100 MAD </div>
+                        <div class="promo text-centre">
+                            <div>-15% EXTRA</div>
+                            <div>40%</div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div>T-Shirt Art Works - d'été </div>
+                        <div class="nprice"> 80 MAD </div>
+                    </div>
+                </div>
+            </div>
+          
+            
            
         </div>
     </div>
     <div class="clearfix"></div>
     <!-- End product -->
     <!-- Start Timeline -->
-    <div id="timeline" class=" timeline block">
+    <div class="head-with-border time">
+        <h2>Timeline</h2>
+    </div>
+    <div class=" timeline ">
         <div class="container">
-            <div class="head-with-border">
-                <h2>Timeline</h2>
-            </div>
             <div class="timeline-content">
                 <div class="year">2018</div>
                 <div class="left">
@@ -233,17 +333,15 @@
                 <div class="clearfix"></div>
                 <div class="right">
                     <div class="content">
-                        <h3>Testing Heading</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corrupti enim saepe. Ea saepe
-                            pariatur sunt, omnis reiciendis laboriosam tempore aspernatur esse, ipsa ipsum architecto
-                            error in! Rem, necessitatibus quos?</p>
+                        <h3>Making Video For ADMR Association</h3>
+                        <p>video produced on 15 villages in Morocco, evaluation of the construction of slopes for isolated villages </p>
                     </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="year">2016</div>
                 <div class="left">
                     <div class="content">
-                        <h3>Testing Heading</h3>
+                        <h3>Making Video For ADMR Association</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corrupti enim saepe. Ea saepe
                             pariatur sunt, omnis reiciendis laboriosam tempore aspernatur esse, ipsa ipsum architecto
                             error in! Rem, necessitatibus quos?</p>
@@ -285,7 +383,7 @@
 
                 </div>
             </div>
-            <div class="info">
+            <div class="info contact-us">
                 <h3 class="section-title ">Company Details</h3>
                 <ul>
                     <li>IsmailArtWorks</li>
@@ -310,7 +408,7 @@
 
             <div class="clearfix"></div>
             <div class="copyright">
-                <div class="text">All Right Reserved &copy; 20121</div>
+                <div class="text">All Right Reserved &copy; 2021</div>
                 <div class="author">Desined By : Ismail Manhou</div>
             </div>
         </div>
