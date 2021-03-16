@@ -162,11 +162,12 @@
 .nav-bullets .bullet {
   width: 20px;
   height: 20px;
-  border: 3px solid #323333;
+  border: 3px solid #e74c3c;
   margin: 20px auto;
   border-radius: 50%;
   cursor: pointer;
   position: relative;
+  z-index: 1001;
 }
 .nav-bullets .bullet .tooltip {
   background-color: #323333;
@@ -562,7 +563,7 @@ ul, ol {
 }
 @media (min-width : 768px) {
   .gallery .images-box {
-    width: 31.6666666667%;
+    width: 47.5%;
   }
   .gallery .images-box:not(:last-of-type) {
     margin-right: 7px;
@@ -570,7 +571,7 @@ ul, ol {
 }
 @media (min-width: 992px) {
   .gallery .images-box {
-    width: 24%;
+    width: 48%;
   }
   .gallery .images-box:not(:last-of-type) {
     padding-right: 24px;
@@ -624,11 +625,11 @@ ul, ol {
   color: #5e5e5e;
 }
 .popup-box img {
-  max-width: 560px;
+  max-width: 800px;
 }
 @media (max-width: 767px) {
   .popup-box img {
-    max-width: 320px;
+    max-width: 300px;
   }
 }
 .popup-box .close-button {
@@ -651,6 +652,11 @@ ul, ol {
   color: #e74c3c;
 }
 
+@media (max-width: 767px) {
+  .dynamic-tabs .tabs-list {
+    display: flex;
+  }
+}
 .dynamic-tabs .tabs-list li {
   padding: 15px 30px;
   background-color: #323333;
@@ -663,6 +669,12 @@ ul, ol {
 }
 .dynamic-tabs .tabs-list li:hover {
   color: #e74c3c;
+}
+@media (max-width: 767px) {
+  .dynamic-tabs .tabs-list li {
+    padding: 10px;
+    font-size: 14px;
+  }
 }
 .dynamic-tabs .tabs-list .active {
   color: #e63535;
@@ -690,7 +702,12 @@ ul, ol {
 .dynamic-tabs .content-list > div .our-project .video-box {
   width: calc(100% / 2);
   float: left;
-  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .dynamic-tabs .content-list > div .our-project .video-box {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 .dynamic-tabs .content-list > div .our-project .video-box iframe {
   width: 90%;
