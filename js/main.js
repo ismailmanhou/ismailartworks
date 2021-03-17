@@ -5,7 +5,13 @@ $(this).addClass('active').siblings().removeClass('active');
 $('.content-list > div').hide();
 $($(this).data('content')).fadeIn();
 });
+//bullet class active 
+$(".bullet").on('click', function(){
 
+  $(this).addClass('active').siblings().removeClass('active');
+  // $('.content-list > div').hide();
+  // $($(this).data('content')).fadeIn();
+  });
 //Switch tabs 
 
 
@@ -115,11 +121,9 @@ document.addEventListener("click", function (e) {
 // nav-bullets
 
 const allBullets = document.querySelectorAll(".nav-bullets .bullet");
-
 allBullets.forEach(bullet => {
 
   bullet.addEventListener("click", (e) => {
-
     document.querySelector(e.target.dataset.section).scrollIntoView({
       behavior: 'smooth'
     });
